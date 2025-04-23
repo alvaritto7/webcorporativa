@@ -1,0 +1,23 @@
+header {
+    background-image: url(img/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% ; /*el 100% es para que ocupe todo el width */
+    height: 150px;
+    position: relative;
+  }
+  
+  .logo {
+    position: absolute;
+    top: -14px;
+    bottom: 0;
+    left: 650px;
+    right: 0;
+    
+    width: 180px; 
+    height: 180px;
+  }
+  
+
+
+
