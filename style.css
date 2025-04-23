@@ -1,8 +1,14 @@
+
+body{
+  background-color: 	#FFE8D6;
+}
+
+
 header {
   background-image: url(img/banner.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: cover; /*esto hace que el banner ocupe todo el espacio disponible sin distorsionarse*/
   height: 150px;
   position: relative;
   display: flex;
@@ -16,16 +22,24 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-
-}
-
-.logo img {
   max-width: 100%;
   max-height: 100%;
 }
 
+
+
+.logo img {
+  width: 100%;  /* Aseguramos que la imagen del logo ocupe el 100% de su contenedor */
+  height: auto;  /* Para mantener la proporción del logo */
+}
+
 nav{
     background-color: #f1f1f1;
+}
+
+.menu-principal{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600; /*le da un toque más firme*/
 }
 
 .menu-principal ul{
@@ -36,25 +50,47 @@ nav{
     margin: 0;
     list-style: none;
     align-items: center;
-    gap: 25px; /*espacio entre las opciones*/
+    
 }
 
 
 .menu-principal li{
     position: relative;
     padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: orangered;
     
     
     border-right: 2px solid #333;
     
     font-size: 18px;
+    transition: all 0.3s; /*suaviza la transición*/
+
+    
 
 
 }
 
-.menu-principal li :last-child{
+
+/* Last child lo que hace es detectar el ultimo elemeto. Es una manera para simplificarte el trabajo y poder referirte al úlitmo elemento de manera más sencilla */
+.menu-principal li:last-child{
     border-right: none;
 }
+
+.menu-principal li:hover{
+  background-color: #ddd; /*se oscurece*/
+  transform: scale(1.05); /*cuando pasas el ratón se agranda*/
+  color: white;
+  background-color: orangered;
+  
+  
+}
+
+
+
 
 
 
