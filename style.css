@@ -97,6 +97,27 @@ nav{
 .menu-principal li:hover a{
   color: white;
 }
+.footer{
+  background-color:rgb(34, 31, 54);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  padding: 40px 20px 20px;
+}
+
+.footer-contenedor{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-columna h3{
+  font-size: 18px;
+  margin-bottom: 18px;
+}
+
+
 
 
 
