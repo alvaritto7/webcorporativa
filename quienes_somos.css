@@ -1,0 +1,164 @@
+/* Estilos generales */
+body {
+  background-color: #FFE8D6;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  background-image: url(img/banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+nav {
+  background-color: #f1f1f1;
+}
+
+.menu-principal {
+  font-weight: 600;
+}
+
+.menu-principal ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  align-items: center;
+}
+
+.menu-principal li {
+  position: relative;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: orangered;
+  border-right: 2px solid #333;
+  font-size: 18px;
+  transition: all 0.3s;
+}
+
+.menu-principal li:last-child {
+  border-right: none;
+}
+
+.menu-principal li:hover {
+  background-color: orangered;
+  transform: scale(1.05);
+  color: white;
+}
+
+.menu-principal li a {
+  text-decoration: none;
+  color: orangered;
+}
+
+.menu-principal li:hover a {
+  color: white;
+}
+
+/* Estilos para el contenido principal */
+.contenido-principal {
+  display: flex;
+  flex-direction: row; /* Sección y aside uno al lado del otro */
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* Centrar el contenido */
+}
+
+section {
+  background-color: white;
+  flex: 2; /* Ocupa más espacio que el aside */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+  background-color: #f9f9f9;
+  flex: 1; /* Menos espacio */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+aside h2 {
+  margin-top: 0;
+}
+
+article p {
+  line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.footer-contenedor {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-columna h3 {
+  margin-bottom: 10px;
+}
+
+.footer-columna ul {
+  list-style: none;
+  padding: 0;
+}
+
+
+/*Diseño Responsive*/
+
+@media (max-width: 768px) {
+  .contenido-principal {
+      flex-direction: column; /* En pantallas pequeñas, se apilan */
+      padding: 10px;
+  }
+
+  nav ul {
+      flex-direction: column;
+  }
+
+  .menu-principal li {
+      border-right: none;
+      border-bottom: 2px solid #333;
+      width: 100%;
+      text-align: center;
+  }
+
+  .menu-principal li:last-child {
+      border-bottom: none;
+  }
+
+  .footer-contenedor {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
