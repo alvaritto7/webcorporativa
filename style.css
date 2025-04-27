@@ -97,6 +97,125 @@ nav{
 .menu-principal li:hover a{
   color: white;
 }
+
+
+.contenido-principal{
+  display: flex;
+  flex-wrap: wrap; /*los elementos saltan a la siguiente fila si no caben en esa linea*/
+
+  margin: 40px auto; /*40px de arriba y abajo y auto de izquierda y derecha*/
+  max-width: 1200px; /*es más responsive ya que no fija el tamaño pero si pone el limite en esos px*/
+
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+
+
+  /* 1.Desplazamiento x.
+  2.Desplazamiento y
+  3.Difuminado
+  4.Extensión de la sombra
+  5.Color */
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2 /*transparencia 20%)*/); 
+}
+
+
+.seccion-izquierda{
+  padding:20px;
+  
+
+
+
+  /*EXPLICACION FLEX GROW
+  Tenemos dos cajas en contenido-principal. Al haber puesto dos cajas, he dicho que el seccion izquierda se lleva 2 partes del espacio por el flex grow
+  y el seccion aside 1 sola parte por su flex grow.*/
+   flex-grow: 2; 
+  flex-basis: 0%; /*define el tamaño inicial del elemento antes de que se reparta el espacio.Empieza desde tamaño cero y se reparte TODO el espacio usando flex-grow.*/
+}
+
+.seccion-header h1{
+  font-size: 32px;
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
+.seccion-header p{
+  font-size: 18px;
+  color: #333;
+  margin-top: 10px;
+  
+  font: italic;
+  
+}
+
+.seccion-articulo{
+  margin-top: 30px;
+}
+
+.seccion-articulo h2{
+  font-size: 24px;
+  color: orangered;
+  font-family: 'Poppins', sans-serif;
+}
+
+.seccion-articulo p{
+  font-size: 16px;
+  color: #444;
+  margin-top: 10px;
+}
+
+.seccion-footer{
+  margin-top: 30px;
+  font-style: italic;
+  color: #666;
+
+}
+
+.seccion-aside{
+  padding: 20px;
+  background-color: #f9f3ec;
+  border-left: 2px solid #ddd;
+  border-radius: 10px;
+  margin-top: 20px;
+  flex-grow: 1;
+  flex-basis: 0%;
+}
+
+.seccion-aside h3{
+  font-size: 22px;
+  color: orangered;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 15px;
+
+
+}
+
+.seccion-aside ul{
+  list-style: none;
+  padding: 0;
+}
+.seccion-aside ul li{
+  padding: 8px 0;
+  font-size: 16px;
+  color: #555;
+  border-bottom: 1px solid #eee;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer{
   background-color:rgb(34, 31, 54);
   color: white;
@@ -107,15 +226,59 @@ nav{
 .footer-contenedor{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+
+
+
+.footer-columna{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 .footer-columna h3{
   font-size: 18px;
-  margin-bottom: 18px;
+  margin-bottom: 18px; /*espacio externo debajo del elemento */
+  
 }
+
+.footer-columna ul{
+  list-style: none;
+  
+}
+
+.footer-columna ul li{
+  margin-bottom: 10px; /*espacio de arriba*/
+}
+
+.footer-columna ul li a{
+  color: #ddd;
+  text-decoration: none;
+}
+
+.redes-sociales a{
+  margin-right: 10px; /*espacio exteroir de la derecha*/
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer-boton{
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-boton a{
+  color: #aaa;
+  text-decoration: none;
+}
+
+
 
 
 
