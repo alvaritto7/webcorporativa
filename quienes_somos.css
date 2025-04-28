@@ -1,12 +1,11 @@
 /* Estilos generales */
 body {
   background-color: #FFE8D6;
-  margin: 0;
   font-family: 'Poppins', sans-serif;
 }
 
 header {
-  background-image: url(img/banner.png);
+  background-image: url(IMG/banner.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -62,6 +61,7 @@ nav {
 }
 
 .menu-principal li:hover {
+  background-color: #ddd; 
   background-color: orangered;
   transform: scale(1.05);
   color: white;
@@ -79,12 +79,22 @@ nav {
 /* Estilos para el contenido principal */
 .contenido-principal {
   display: flex;
-  flex-direction: row; /* Sección y aside uno al lado del otro */
-  justify-content: center;
+  flex-wrap: wrap; /*los elementos saltan a la siguiente fila si no caben en esa linea*/
+
+  margin: 40px auto; /*40px de arriba y abajo y auto de izquierda y derecha*/
+  max-width: 1200px; /*es más responsive ya que no fija el tamaño pero si pone el limite en esos px*/
+
   padding: 20px;
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto; /* Centrar el contenido */
+  background-color: #fff;
+  border-radius: 10px;
+
+
+  /* 1.Desplazamiento x.
+  2.Desplazamiento y
+  3.Difuminado
+  4.Extensión de la sombra
+  5.Color */
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2 /*transparencia 20%)*/); 
 }
 
 section {
@@ -119,30 +129,90 @@ article p {
 }
 
 /* Footer */
-.footer {
-  background-color: #f1f1f1;
-  padding: 20px;
-  margin-top: 20px;
+.footer{
+  background-color:rgb(34, 31, 54);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  padding: 40px 20px 20px;
 }
 
-.footer-contenedor {
+.footer-contenedor{
   display: flex;
-  justify-content: space-around;
+  flex-direction: column; /* Asegura que el contenido esté en columnas */
+  align-items: center; /* Centra el contenido horizontalmente */
+  justify-content: center;
 }
 
-.footer-columna h3 {
-  margin-bottom: 10px;
+
+
+
+.footer-columna{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.footer-columna h3{
+  font-size: 18px;
+  margin-bottom: 18px; /*espacio externo debajo del elemento */
+  
 }
 
-.footer-columna ul {
+.footer-columna ul{
   list-style: none;
-  padding: 0;
+  
 }
+
+.footer-columna ul li{
+  margin-bottom: 10px; /*espacio de arriba*/
+}
+
+.footer-columna ul li a{
+  color: #ddd;
+  text-decoration: none;
+}
+
+.redes-sociales a{
+  margin-right: 10px; /*espacio exteroir de la derecha*/
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.footer-boton{
+  text-align: center;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-boton a{
+  color: #aaa;
+  text-decoration: none;
+}
+
+#logo-footer{
+
+  margin-bottom: 5px;
+  
+}
+.footer-logo{
+  width: 100px;
+  height: auto;
+  max-width: 100%;
+}
+
+
+
+
+
+
+
+
 
 
 /*Diseño Responsive*/
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /*El "media" sirve para que se pueda ver la pagina web en los moviles*/
   .contenido-principal {
       flex-direction: column; /* En pantallas pequeñas, se apilan */
       padding: 10px;
