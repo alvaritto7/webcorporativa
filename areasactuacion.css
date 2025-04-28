@@ -1,0 +1,293 @@
+body{
+    background-color: 	#FFE8D6;
+  }
+  
+  
+  header {
+    background-image: url(IMG/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; /*esto hace que el banner ocupe todo el espacio disponible sin distorsionarse*/
+    height: 150px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  
+  
+  .logo img {
+    width: 100%;  /* Aseguramos que la imagen del logo ocupe el 100% de su contenedor */
+    height: auto;  /* Para mantener la proporción del logo */
+  }
+  
+  nav{
+      background-color: #f1f1f1;
+  }
+  
+  .menu-principal{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; /*le da un toque más firme*/
+  }
+  
+  .menu-principal ul{
+  
+      display: flex; /*utilizo esto para colocar a los elementos en linea ya que por defecto los coloca horizontalmente*/
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      align-items: center;
+      
+  }
+  
+  
+  .menu-principal li{
+      position: relative;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      color: orangered;
+      
+      
+      border-right: 2px solid #333;
+      
+      font-size: 18px;
+      transition: all 0.3s; /*suaviza la transición*/
+  
+      
+  
+  
+  }
+  
+  
+  /* Last child lo que hace es detectar el ultimo elemeto. Es una manera para simplificarte el trabajo y poder referirte al úlitmo elemento de manera más sencilla */
+  .menu-principal li:last-child{
+      border-right: none;
+  }
+  
+  .menu-principal li:hover{
+    background-color: #ddd; /*se oscurece*/
+    transform: scale(1.05); /*cuando pasas el ratón se agranda*/
+    color: white;
+    background-color: orangered;
+    
+    
+  }
+  
+  .menu-principal li a{
+    text-decoration: none;
+    color:orangered
+  }
+  
+  .menu-principal li:hover a{
+    color: white;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .contenido-actuacion {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  .zona-izquierda {
+    padding: 20px;
+    flex-grow: 2;
+    flex-basis: 0%;
+  }
+  
+  .cabecera-zona h1 {
+    font-size: 32px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .cabecera-zona p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+    font-style: italic;
+  }
+  
+  .detalle-servicios {
+    margin-top: 30px;
+  }
+  
+  .detalle-servicios h2 {
+    font-size: 24px;
+    color: orangered;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .detalle-servicios p {
+    font-size: 16px;
+    color: #444;
+    margin-top: 10px;
+  }
+  
+  .lista-servicios {
+    margin-top: 20px;
+    padding-left: 20px;
+  }
+  
+  .lista-servicios li {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .pie-zona {
+    margin-top: 30px;
+    font-style: italic;
+    color: #666;
+  }
+  
+  .zona-aside {
+    padding: 20px;
+    background-color: #f9f3ec;
+    border-left: 2px solid #ddd;
+    border-radius: 10px;
+    margin-top: 20px;
+    flex-grow: 1;
+    flex-basis: 0%;
+  }
+
+  .zona-aside img{
+    max-width: 90%;
+    border-radius: 20px;
+  }
+  
+  .zona-aside h3 {
+    font-size: 22px;
+    color: orangered;
+    font-style: italic;
+    margin-bottom: 15px;
+  }
+  
+  .zona-aside ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .zona-aside ul li {
+    padding: 8px 0;
+    font-size: 16px;
+    color: #555;
+    border-bottom: 1px solid #eee;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .footer{
+    background-color:rgb(34, 31, 54);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 40px 20px 20px;
+  }
+  
+  .footer-contenedor{
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido esté en columnas */
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center;
+  }
+  
+  
+  
+  
+  .footer-columna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-columna h3{
+    font-size: 18px;
+    margin-bottom: 18px; /*espacio externo debajo del elemento */
+    
+  }
+  
+  .footer-columna ul{
+    list-style: none;
+    
+  }
+  
+  .footer-columna ul li{
+    margin-bottom: 10px; /*espacio de arriba*/
+  }
+  
+  .footer-columna ul li a{
+    color: #ddd;
+    text-decoration: none;
+  }
+  
+  .redes-sociales a{
+    margin-right: 10px; /*espacio exteroir de la derecha*/
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .footer-boton{
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+  }
+  
+  .footer-boton a{
+    color: #aaa;
+    text-decoration: none;
+  }
+  
+  #logo-footer{
+  
+    margin-bottom: 5px;
+    
+  }
+  .footer-logo{
+    width: 100px;
+    height: auto;
+    max-width: 100%;
+  }
