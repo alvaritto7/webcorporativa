@@ -1,4 +1,3 @@
-
 body{
   background-color: 	#FFE8D6;
 }
@@ -36,6 +35,7 @@ header {
 nav{
     background-color: #f1f1f1;
 }
+
 
 .menu-principal{
   font-family: 'Poppins', sans-serif;
@@ -287,8 +287,6 @@ nav{
   height: auto;
   max-width: 100%;
 }
-
-
 
 
 
