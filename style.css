@@ -5,7 +5,7 @@ body{
 
 
 header {
-  background-image: url(img/banner.png);
+  background-image: url(IMG/banner.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; /*esto hace que el banner ocupe todo el espacio disponible sin distorsionarse*/
