@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiénes Somos - SnackGourmet</title>
-    <link rel="stylesheet" href="quienes_somos.css">
+    <title>Trabaja aquí - SnackGourmet</title>
+    <link rel="stylesheet" href="colabora.css">
     <link rel="icon" href="IMG/logo.png">
 </head>
 <body>
@@ -16,25 +16,57 @@
         <nav class="menu-principal">
             <ul>
                 <li><a href="index.html" >Home</a></li>
-                <li><a href="#">Quiénes Somos</a></li>
+                <li><a href="quienes_somos.html">Quiénes Somos</a></li>
                 <li><a href="areasactuacion.html">Áreas de Actuación</a></li>
-                <li><a href="colabora.html">Trabaja aquí</a></li>
+                <li><a href="#">Trabaja aquí</a></li>
             </ul>
         </nav>
 
         <main class="contenido-principal">
             <section>
                 <header>
-                    <h1>¿Quiénes Somos?</h1>
+                    <h1>¿Quieres trabajar con nosotros? ¡INSCRIBITE!</h1>
                 </header>
                 <article>
-                    <p>En <strong>SnackGourmet</strong> creemos que cada bocado debe ser una experiencia inolvidable.
-                    <br>Nos consideramos una empresa apasionada por el privilegio de un buen sabor en el paladar.
-                    </p>
-                    <p>Nuestra misión es transformar los momentos cotidianos en instantes especiales
-                        <br>ofreciendo sncks artesanales de alta calidad combinando nuestra tradición,
-                        <br>innovación y una pizca de buena creatividad.
-                    </p>
+                    <br>
+                    <br>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="usuario" name="nombre" maxlength="40" minlegth="3" placeholder="Nombre Completo" required>
+                    <br>
+                    <br>
+                    <label for="Correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="nombre@ejemplo.com" required>
+                    <br>
+                    <br>
+                    <label for="dni">DNI:</label>
+                    <input type="text" id="usuario" name="dni" maxlength="40" minlegth="3" placeholder="12345678A" required>
+                    <br>
+                    <br>
+                    <label for="móvil">Número de Teléfono:</label>
+                    <input type="text" id="móvil" name="nombre" maxlength="40" minlegth="3" placeholder="654987321" required>
+                    <br>
+                    <br>
+                    <label for="Descripcion" >Observaciones</label>
+                    <br>
+                    <textarea id="Descripcion" name="Descripcion" rows="4" cols="60" placeholder="Escriba algo que quiera que sepamos..." required></textarea>
+                    <br>
+                    <br>
+                    <button type="submit" id="enviar">Enviar</button>
+                    <button type="reset" id="restablecer">Restablecer</button>
+                    
+                    
+
+
+
+
+
+
+
+
+
+
+
+
                 </article>
                 <footer>
                     <p>SnackGourmet - Donde cada snack cuenta una historia de sabor y pasión.</p>

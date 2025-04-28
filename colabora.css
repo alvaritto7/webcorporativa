@@ -1,0 +1,254 @@
+/* Estilos generales */
+body {
+    background-color: #FFE8D6;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  header {
+    background-image: url(IMG/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  nav {
+    background-color: #f1f1f1;
+  }
+  
+  .menu-principal {
+    font-weight: 600;
+  }
+  
+  .menu-principal ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+  }
+  
+  .menu-principal li {
+    position: relative;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: orangered;
+    border-right: 2px solid #333;
+    font-size: 18px;
+    transition: all 0.3s;
+  }
+  
+  .menu-principal li:last-child {
+    border-right: none;
+  }
+  
+  .menu-principal li:hover {
+    background-color: #ddd; 
+    background-color: orangered;
+    transform: scale(1.05);
+    color: white;
+  }
+  
+  .menu-principal li a {
+    text-decoration: none;
+    color: orangered;
+  }
+  
+  .menu-principal li:hover a {
+    color: white;
+  }
+  
+  /* Estilos para el contenido principal */
+  .contenido-principal {
+    display: flex;
+    flex-wrap: wrap; /*los elementos saltan a la siguiente fila si no caben en esa linea*/
+  
+    margin: 40px auto; /*40px de arriba y abajo y auto de izquierda y derecha*/
+    max-width: 1200px; /*es más responsive ya que no fija el tamaño pero si pone el limite en esos px*/
+  
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+  
+  
+    /* 1.Desplazamiento x.
+    2.Desplazamiento y
+    3.Difuminado
+    4.Extensión de la sombra
+    5.Color */
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2 /*transparencia 20%)*/); 
+  }
+  
+  section {
+    background-color: white;
+    flex: 2; /* Ocupa más espacio que el aside */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+
+  
+  #enviar{
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: rgb(104, 208, 104);
+  }
+
+  #restablecer{
+    border-radius: 10px;
+    background-color: red;
+  }
+  
+  aside {
+    background-color: #f9f9f9;
+    flex: 1; /* Menos espacio */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  aside h2 {
+    margin-top: 0;
+  }
+  
+  .imagen-valores{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px
+  }
+  
+  article p {
+    line-height: 1.6;
+  }
+  
+  /* Footer */
+  .footer{
+    background-color:rgb(34, 31, 54);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding: 40px 20px 20px;
+  }
+  
+  .footer-contenedor{
+    display: flex;
+    flex-direction: column; /* Asegura que el contenido esté en columnas */
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center;
+  }
+  
+  
+  
+  
+  .footer-columna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-columna h3{
+    font-size: 18px;
+    margin-bottom: 18px; /*espacio externo debajo del elemento */
+    
+  }
+  
+  .footer-columna ul{
+    list-style: none;
+    
+  }
+  
+  .footer-columna ul li{
+    margin-bottom: 10px; /*espacio de arriba*/
+  }
+  
+  .footer-columna ul li a{
+    color: #ddd;
+    text-decoration: none;
+  }
+  
+  .redes-sociales a{
+    margin-right: 10px; /*espacio exteroir de la derecha*/
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  
+  .footer-boton{
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+  }
+  
+  .footer-boton a{
+    color: #aaa;
+    text-decoration: none;
+  }
+  
+  #logo-footer{
+  
+    margin-bottom: 5px;
+    
+  }
+  .footer-logo{
+    width: 100px;
+    height: auto;
+    max-width: 100%;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*Diseño Responsive*/
+  
+  @media (max-width: 768px) { /*El "media" sirve para que se pueda ver la pagina web en los moviles*/
+    .contenido-principal {
+        flex-direction: column; /* En pantallas pequeñas, se apilan */
+        padding: 10px;
+    }
+  
+    nav ul {
+        flex-direction: column;
+    }
+  
+    .menu-principal li {
+        border-right: none;
+        border-bottom: 2px solid #333;
+        width: 100%;
+        text-align: center;
+    }
+  
+    .menu-principal li:last-child {
+        border-bottom: none;
+    }
+  
+    .footer-contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+  
