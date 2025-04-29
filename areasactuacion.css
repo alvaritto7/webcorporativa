@@ -36,78 +36,87 @@ body{
       background-color: #f1f1f1;
   }
   
-  .menu-principal{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600; /*le da un toque más firme*/
+  .menu-principal {
+    font-weight: 600;
   }
   
-  .menu-principal ul{
-  
-      display: flex; /*utilizo esto para colocar a los elementos en linea ya que por defecto los coloca horizontalmente*/
-      justify-content: center;
-      padding: 0;
-      margin: 0;
-      list-style: none;
-      align-items: center;
-      
+  .menu-principal > ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    align-items: center;
   }
   
-  
-  .menu-principal li{
-      position: relative;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      color: orangered;
-      
-      
-      border-right: 2px solid #333;
-      
-      font-size: 18px;
-      transition: all 0.3s; /*suaviza la transición*/
-  
-      
-  
-  
+  .menu-principal > ul > li {
+    position: relative;
+    padding: 10px 20px;
+    display: block;
+    color: orangered;
+    border-right: 2px solid #333;
+    font-size: 18px;
+    text-align: center;
+    transition: all 0.3s;
+    white-space: nowrap;
   }
   
-  
-  /* Last child lo que hace es detectar el ultimo elemeto. Es una manera para simplificarte el trabajo y poder referirte al úlitmo elemento de manera más sencilla */
-  .menu-principal li:last-child{
-      border-right: none;
+  .menu-principal > ul > li:last-child {
+    border-right: none;
   }
   
-  .menu-principal li:hover{
-    background-color: #ddd; /*se oscurece*/
-    transform: scale(1.05); /*cuando pasas el ratón se agranda*/
-    color: white;
+  .menu-principal > ul > li:hover {
     background-color: orangered;
-    
-    
-  }
-  
-  .menu-principal li a{
-    text-decoration: none;
-    color:orangered
-  }
-  
-  .menu-principal li:hover a{
+    transform: scale(1.05);
     color: white;
   }
-
-
-
-
-
-
-
-
-
-
-
-
+  
+  .menu-principal li a {
+    text-decoration: none;
+    color: orangered;
+  }
+  
+  .menu-principal li:hover > a {
+    color: white;
+  }
+  
+  /* Submenú oculto por defecto */
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 0;
+    list-style: none;
+    min-width: 180px;
+    z-index: 1000;
+  }
+  
+  /* Mostrar submenú solo cuando se hace hover sobre el li padre */
+  .menu-principal li:hover .submenu {
+    display: block;
+  }
+  
+  .submenu li {
+    padding: 4px 10px;
+    border-bottom: 1px solid #eee;
+    background-color: white;
+  }
+  
+  .submenu li a {
+    color: orangered;
+  }
+  
+  .submenu li:hover {
+    background-color: orangered;
+  }
+  
+  .submenu li:hover a {
+    color: white;
+  }
 
 
   .contenido-actuacion {

@@ -34,7 +34,7 @@ nav {
   font-weight: 600;
 }
 
-.menu-principal ul {
+.menu-principal > ul {
   display: flex;
   justify-content: center;
   padding: 0;
@@ -43,25 +43,23 @@ nav {
   align-items: center;
 }
 
-.menu-principal li {
+.menu-principal > ul > li {
   position: relative;
   padding: 10px 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+  display: block;
   color: orangered;
   border-right: 2px solid #333;
   font-size: 18px;
+  text-align: center;
   transition: all 0.3s;
+  white-space: nowrap;
 }
 
-.menu-principal li:last-child {
+.menu-principal > ul > li:last-child {
   border-right: none;
 }
 
-.menu-principal li:hover {
-  background-color: #ddd; 
+.menu-principal > ul > li:hover {
   background-color: orangered;
   transform: scale(1.05);
   color: white;
@@ -72,9 +70,48 @@ nav {
   color: orangered;
 }
 
-.menu-principal li:hover a {
+.menu-principal li:hover > a {
   color: white;
 }
+
+/* Submenú oculto por defecto */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 0;
+  list-style: none;
+  min-width: 180px;
+  z-index: 1000;
+}
+
+/* Mostrar submenú solo cuando se hace hover sobre el li padre */
+.menu-principal li:hover .submenu {
+  display: block;
+}
+
+.submenu li {
+  padding: 4px 10px;
+  border-bottom: 1px solid #eee;
+  background-color: white;
+}
+
+.submenu li a {
+  color: orangered;
+}
+
+.submenu li:hover {
+  background-color: orangered;
+}
+
+.submenu li:hover a {
+  color: white;
+}
+
 
 /* Estilos para el contenido principal */
 .contenido-principal {

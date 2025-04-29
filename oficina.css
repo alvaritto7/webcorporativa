@@ -112,6 +112,7 @@ body {
     color: white;
   }
   
+  
   /* Estilos para el contenido principal */
   .contenido-principal {
     display: flex;
@@ -140,54 +141,8 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-
-  section footer{
-    font-style: italic;
-    color: #666;
-  }
-
-
   
-  #enviar{
-    margin-right: 10px;
-    border-radius: 10px;
-    background-color: rgb(104, 208, 104);
-  }
-
-  #restablecer{
-    border-radius: 10px;
-    background-color: red;
-  }
-  
-  aside {
-    background-color: #f9f9f9;
-    flex: 1; /* Menos espacio */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  aside h2 {
-    margin-top: 0;
-  }
-  
-  aside h2{
-    font-size: 22px;
-  color: orangered;
-  font-style: italic;
-  margin-bottom: 15px;
-  }
-  aside ul{
-    list-style: none;
-    padding: 0;
-  }
-
-  aside ul li{
-    padding: 8px 0;
-  font-size: 16px;
-  color: #555;
-  border-bottom: 1px solid #eee;
-  }
+    
   
   .imagen-valores{
     width: 100%;
@@ -310,4 +265,3 @@ body {
         align-items: center;
     }
   }
-  
