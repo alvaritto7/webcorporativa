@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
   background-color: #FFE8D6;
-  font-family: 'Poppins', sans-serif;
+  
 }
 
 header {
@@ -142,6 +142,12 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+section footer{
+  margin-top: 30px;
+  font-style: italic;
+  color: #666;
+}
+
 aside {
   background-color: #f9f9f9;
   flex: 1; /* Menos espacio */
@@ -150,8 +156,21 @@ aside {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-aside h2 {
-  margin-top: 0;
+aside h3 {
+  font-size: 22px;
+  color: orangered;
+  font-style: italic;
+}
+aside ul{
+  list-style: none;
+  padding: 0;
+  
+
+}
+aside ul li{
+  padding: 8px 0;
+  font-size: 16px;
+  color: #555;
 }
 
 .imagen-valores{
@@ -163,6 +182,7 @@ aside h2 {
 
 article p {
   line-height: 1.6;
+  color: #444;
 }
 
 /* Footer */

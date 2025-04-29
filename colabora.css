@@ -1,7 +1,7 @@
 /* Estilos generales */
 body {
     background-color: #FFE8D6;
-    font-family: 'Poppins', sans-serif;
+    
   }
   
   header {
@@ -167,26 +167,25 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  aside h2 {
-    margin-top: 0;
-  }
   
-  aside h2{
+  
+  aside h3 {
     font-size: 22px;
   color: orangered;
   font-style: italic;
   margin-bottom: 15px;
   }
-  aside ul{
+  
+  aside ul {
     list-style: none;
     padding: 0;
   }
-
-  aside ul li{
+  
+  aside ul li {
     padding: 8px 0;
   font-size: 16px;
   color: #555;
-  border-bottom: 1px solid #eee;
+  
   }
   
   .imagen-valores{
